@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\AliakseiKlimuk\\MD35-25\\module_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9591FC3A-951A-4245-AD95-EBF6B7C9321E}|module_1\\module_1.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_1\\module_1\\module_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9591FC3A-951A-4245-AD95-EBF6B7C9321E}|module_1\\module_1.vcxproj|solutionrelative:module_1\\module_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{35E7344A-E41A-4933-B0B0-E8C2449EAEC7}|module_1\\module_1.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_1\\module_1\\module_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{35E7344A-E41A-4933-B0B0-E8C2449EAEC7}|module_1\\module_1.vcxproj|solutionrelative:module_1\\module_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +24,9 @@
               "RelativeDocumentMoniker": "module_1\\module_1.cpp",
               "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\module_1\\module_1\\module_1.cpp",
               "RelativeToolTip": "module_1\\module_1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-17T15:40:49.851Z",
+              "WhenOpened": "2025-12-22T19:32:02.291Z",
               "EditorCaption": ""
             }
           ]
