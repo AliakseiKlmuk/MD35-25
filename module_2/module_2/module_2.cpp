@@ -64,7 +64,4 @@ int main()
     //b >> 1
     int h = b >> 1;
     std::cout << "b >> 1 = " << h << std::endl;
-
-
-
 }
