@@ -1,3 +1,6 @@
 ﻿  module_3.1.cpp
+<<<<<<< HEAD
 C:\AliakseiKlimuk\MD35-25\module_3.1\module_3.1\module_3.1.cpp(26,18): warning C4101: light: неиспользованная локальная переменная
+=======
+>>>>>>> 56d2f8f01327c55aeea666533f9407b686285afe
   module_3.1.vcxproj -> C:\AliakseiKlimuk\MD35-25\module_3.1\x64\Debug\module_3.1.exe
