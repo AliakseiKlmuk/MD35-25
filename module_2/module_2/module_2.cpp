@@ -1,68 +1,86 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
+
+enum class cardinalDirections {
+    NORTH = 0,
+    NORTH_WEST = 45,
+    WEST = 90,
+    SOUTH_WEST = 135,
+    SOUTH = 180,
+    SOUTH_EAST = 225,
+    EAST = 270,
+    NORTH_EAST = 315,
+    UNKNOW = -1,
+    ROUND = 359
+};
+
+void Cardinal(cardinalDirections cardinal) {
+
+    int cardinalValue = static_cast<int>(cardinal);
+
+    if (cardinal < cardinalDirections::NORTH || cardinal > cardinalDirections::ROUND)
+    {
+        std::cout << "Unknown direction" << std::endl;
+    }
+
+    else if (cardinalDirections::NORTH == cardinal)
+    {
+        std::cout << "Your direction North" << std::endl;
+    }
+    else if (cardinalDirections::NORTH <= cardinal && cardinal < cardinalDirections::WEST)
+    {
+        std::cout << "Your direction NorthWest" << std::endl;
+    }
+
+    else if (cardinalDirections::WEST == cardinal)
+    {
+        std::cout << "Your direction West" << std::endl;
+    }
+    else if (cardinalDirections::WEST < cardinal && cardinal < cardinalDirections::SOUTH)
+    {
+        std::cout << "Your direction SouthWest" << std::endl;
+    }
+
+    else if (cardinalDirections::SOUTH == cardinal)
+    {
+        std::cout << "Your direction South" << std::endl;
+    }
+    else if (cardinalDirections::SOUTH < cardinal && cardinal < cardinalDirections::EAST)
+    {
+        std::cout << "Your direction SouthEast" << std::endl;
+    }
+
+    else if (cardinalDirections::EAST == cardinal)
+    {
+        std::cout << "Your direction East" << std::endl;
+    }
+    else if (cardinalDirections::EAST < cardinal && cardinal <= cardinalDirections::ROUND)
+    {
+        std::cout << "Your direction NorthEast" << std::endl;
+    }
+
+}
 
 int main()
 {
 
-    int a, b;
-    std::cout << "enter a number a\n";
-    std::cin >> a;
-    std::cout << "enter a number b\n";
-    std::cin >> b;
-    std::cout << "change and enter operation\n";
+    int degreeInput;
 
-    // std::cin.read();
+    while (true) {
 
-         //a + b plus
-         // a - b minus 
-         // a * b Times
-    std::cout << a + b << " " << a - b << " " << a * b;
+        std::cout << "enter degree 0 - 359" << std::endl;
+        std::cin >> degreeInput;
 
-    //a == b equal to
-    if (a == b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
+        if (degreeInput < 0 || degreeInput > 359) {
+            std::cout << "uncorrect degree. enter degree 0 - 359" << std::endl;
+            continue;
+        }
+        cardinalDirections degree = static_cast<cardinalDirections>(degreeInput);
+        Cardinal(degree);
+        break;
+    }
 
-    //a != b not equal to
-    if (a != b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
 
-    //a > b more than
-    if (a > b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
 
-    //a < b  less than
-    if (a < b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
-
-    //a >= b greater than or equal to
-    if (a <= b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
-
-    //a <= b less than or equal to
-    if (a >= b) { std::cout << true << std::endl; }
-    else { std::cout << false << std::endl; }
-
-    //a & b AND
-    int c = a & b;
-    std::cout << c << std::endl;
-
-    //a | b OR
-    int d = a | b;
-    std::cout << d << std::endl;
-
-    //a ^ b XOR
-    int e = a ^ b;
-    std::cout << d << std::endl;
-
-    //~a NOT
-    int f = ~a;
-    std::cout << f << std::endl;
-
-    //a << 2
-    int g = b << 2;
-    std::cout << g << std::endl;
-
-    //b >> 1
-    int h = b >> 1;
-    std::cout << h << std::endl;
-
+    return 0;
 }
