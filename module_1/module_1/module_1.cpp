@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #define DEBUG 4
 #define PI 3.14
 #define FUNC_MULT(x,y) ((x)*(y))
