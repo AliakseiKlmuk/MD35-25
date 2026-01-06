@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\module_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|solutionrelative:module_3\\module_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|solutionrelative:module_3\\Tools.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3818BD99-DDD1-4479-83CF-87A063926CF6}|module_3\\module_3.vcxproj|solutionrelative:module_3\\Tools.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tools.cpp",
+              "DocumentMoniker": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.cpp",
+              "RelativeDocumentMoniker": "module_3\\Tools.cpp",
+              "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.cpp",
+              "RelativeToolTip": "module_3\\Tools.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-06T18:59:39.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tools.h",
+              "DocumentMoniker": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.h",
+              "RelativeDocumentMoniker": "module_3\\Tools.h",
+              "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\Tools.h",
+              "RelativeToolTip": "module_3\\Tools.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-06T18:58:44.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "module_3.cpp",
+              "DocumentMoniker": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\module_3.cpp",
+              "RelativeDocumentMoniker": "module_3\\module_3.cpp",
+              "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\module_3\\module_3\\module_3.cpp*",
+              "RelativeToolTip": "module_3\\module_3.cpp*",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-06T18:57:04.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
