@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AliakseiKlimuk\\MD35-25\\module_5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEEA397C-7DF6-4B39-ACC7-BC3AA22E4D1A}|module_5\\module_5.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\module_5\\module_5\\module_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DEEA397C-7DF6-4B39-ACC7-BC3AA22E4D1A}|module_5\\module_5.vcxproj|solutionrelative:module_5\\module_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "module_5.cpp",
+              "DocumentMoniker": "C:\\AliakseiKlimuk\\MD35-25\\module_5\\module_5\\module_5.cpp",
+              "RelativeDocumentMoniker": "module_5\\module_5.cpp",
+              "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\module_5\\module_5\\module_5.cpp",
+              "RelativeToolTip": "module_5\\module_5.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T09:26:38.496Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
