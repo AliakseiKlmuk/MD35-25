@@ -5,48 +5,48 @@
 #include <cctype>    // Для tolower
 
 
-enum class permissions {
+enum class Permission {
     UNKNOW = -1,
     GUEST,
     USER,
     ADMIN
 };
 
-void printPermission (permissions people) {
+void printPermission (Permission people) {
 
     switch(people) {
-    case permissions::GUEST:
-        std::cout << "this people guest" << std::endl;
+    case Permission::GUEST:
+        std::cout << "This people guest" << std::endl;
         break;
 
-    case permissions::USER:
-        std::cout << "this people user" << std::endl;
+    case Permission::USER:
+        std::cout << "This people user" << std::endl;
         break;
 
-    case permissions::ADMIN:
-        std::cout << "this people administrator" << std::endl;
+    case Permission::ADMIN:
+        std::cout << "This people administrator" << std::endl;
         break;
 
     default:
-        std::cout << "unknow this people" << std::endl;
+        std::cout << "Unknow this people" << std::endl;
         break;
     }
 
 };
 
-permissions selectPeople(std::string people) {
+Permission selectPeople(std::string people) {
 
-    if ("guest" == people) return permissions::GUEST;
-    else if ("user" == people) return permissions::USER;
-    else if ("admin" == people) return permissions::ADMIN;
-    else return permissions::UNKNOW;
+    if (people == "guest") return Permission::GUEST;
+    else if (people == "user") return Permission::USER;
+    else if (people == "admin") return Permission::ADMIN;
+    else return Permission::UNKNOW;
 
 };
 
 
 int main()
 {
-    std::cout << "enter permission" << std::endl;
+    std::cout << "Enter permission (guest, user, admin):" << std::endl;
 
     std::string people;
     std::cin >> people;
@@ -55,7 +55,7 @@ int main()
 
 
 
-    permissions securiti = selectPeople(people);
+    Permission securiti = selectPeople(people);
 
     //std::cout << people << std::endl;
     printPermission(securiti);
