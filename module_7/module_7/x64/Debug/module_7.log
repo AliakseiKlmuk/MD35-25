@@ -1,0 +1,60 @@
+﻿  module_7.cpp
+C:\AliakseiKlimuk\MD35-25\module_7\module_7\module_7.cpp(22,30): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64): warning C4244: инициализация: преобразование "int" в "_Ty", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64): warning C4244:             _Ty=float
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64): warning C4244:         ]
+  (compiling source file 'module_7.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(508,64):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\AliakseiKlimuk\MD35-25\module_7\module_7\module_7.cpp(19,43):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<_Ty> std::make_shared<float,int&>(int &)"
+          with
+          [
+              _Ty=float
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\memory(2944,46):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<float>::_Ref_count_obj2<int&>(int &)"
+          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\memory(2131,18):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<_Ty,int&>(_Ty &,int &) noexcept"
+          with
+          [
+              _Ty=float
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(518,14):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty *std::construct_at<_Ty,int&>(_Ty *const ,int &) noexcept(<expr>)"
+          with
+          [
+              _Ty=float
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(522,61): warning C4244: инициализация: преобразование "int" в "_Ty", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(522,61): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(522,61): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(522,61): warning C4244:             _Ty=float
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(522,61): warning C4244:         ]
+  (compiling source file 'module_7.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69): warning C4244: инициализация: преобразование "int" в "_Ty", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69): warning C4244:             _Ty=float
+C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69): warning C4244:         ]
+  (compiling source file 'module_7.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(509,69):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\memory(2131,18):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<_Ty,int&>(_Ty &,int &) noexcept"
+          with
+          [
+              _Ty=float
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\xutility(518,14):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty *std::construct_at<_Ty,int&>(_Ty *const ,int &) noexcept"
+          with
+          [
+              _Ty=float
+          ]
+  
+  module_7.vcxproj -> C:\AliakseiKlimuk\MD35-25\module_7\x64\Debug\module_7.exe
