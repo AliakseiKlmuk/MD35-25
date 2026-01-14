@@ -2,19 +2,23 @@
 #include <iostream>
 using namespace std;
 
-const int clubs = 0;
-const int diamonds = 1;
-const int hearts = 3;
-const int spiders = 3;
+//const int clubs = 0;
+//const int diamonds = 1;
+//const int hearts = 2;
+//const int spiders = 3;
+
 const int jack = 11;
 const int queen = 12;
 const int king = 13;
 const int ace = 14;
 
+enum Suit {clubs, diamonds, hearts, spaders};
+
 struct card
 {
     int number;
-    int suit;
+    //int suit;
+    Suit suit;
 };
 
 int main()
@@ -25,8 +29,8 @@ int main()
     std::cout << "Card 1: 7 clubs \n" << std::endl;
     card card2 = { jack, hearts };
     std::cout << "Card 2: Jack Hearts \n" << std::endl;
-    card card3 = { ace, spiders };
-    std::cout << "Card 2: Ace Spiders \n" << std::endl;
+    card card3 = { ace, spaders };
+    std::cout << "Card 3: Ace Spiders \n" << std::endl;
 
     prize = card3;
     std::cout << "Change card positions 1 and 3 \n" << std::endl;
