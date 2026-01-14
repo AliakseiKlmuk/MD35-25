@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="homeWork_part4.3/homeWork_part4.3.vcxproj" />
+</Solution>
