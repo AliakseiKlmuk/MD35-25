@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AliakseiKlimuk\\MD35-25\\homeWork_part4.4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4A1210D-4D36-406D-BA43-CBD7A51DA660}|homeWork_part4.4\\homeWork_part4.4.vcxproj|C:\\AliakseiKlimuk\\MD35-25\\homeWork_part4.4\\homeWork_part4.4\\homeWork_part4.4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4A1210D-4D36-406D-BA43-CBD7A51DA660}|homeWork_part4.4\\homeWork_part4.4.vcxproj|solutionrelative:homeWork_part4.4\\homeWork_part4.4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "homeWork_part4.4.cpp",
+              "DocumentMoniker": "C:\\AliakseiKlimuk\\MD35-25\\homeWork_part4.4\\homeWork_part4.4\\homeWork_part4.4.cpp",
+              "RelativeDocumentMoniker": "homeWork_part4.4\\homeWork_part4.4.cpp",
+              "ToolTip": "C:\\AliakseiKlimuk\\MD35-25\\homeWork_part4.4\\homeWork_part4.4\\homeWork_part4.4.cpp*",
+              "RelativeToolTip": "homeWork_part4.4\\homeWork_part4.4.cpp*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T11:35:07.039Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
