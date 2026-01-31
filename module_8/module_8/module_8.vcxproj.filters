@@ -18,15 +18,12 @@
     <ClCompile Include="module_8.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="image_converter.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="structura.cpp">
+    <ClCompile Include="ImageConverter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="image_converter.h">
+    <ClInclude Include="ImageConverter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

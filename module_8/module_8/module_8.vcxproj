@@ -127,12 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="image_converter.cpp" />
+    <ClCompile Include="ImageConverter.cpp" />
     <ClCompile Include="module_8.cpp" />
-    <ClCompile Include="structura.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="image_converter.h" />
+    <ClInclude Include="ImageConverter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
