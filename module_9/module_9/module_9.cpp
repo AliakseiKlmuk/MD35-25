@@ -1,62 +1,21 @@
 ﻿#include <iostream>
-
-enum class dayWeek{
-    UNKNOW = -1,
-    Mon,
-    Tue,
-    Wen,
-    Thu,
-    Fri,
-    Sat,
-    Sun,
-    aMax
-};
+#include "User.h"
+#include "UsersDB.h"
 
 int main()
 {
-    dayWeek day1, day2;
-    day1 = dayWeek::Thu;
-    day2 = dayWeek::Fri;
+ 
+	std::cout << "Hello module10!\n";
 
-   // std::cout << static_cast<int>(day1) - static_cast<int>(day2) << std::endl;
+	UsersDB* db = new UsersDB;
+	User user1{ "Yury", Previligies::Ordinary };
+	db->AddUser(user1);
 
-    
-    for (int i = 0; i < static_cast<int>(dayWeek::aMax); ++i) {
-        //if (i == static_cast<int>(day1)) {
+	User user2{ "Admin", Previligies::Administrator };
+	db->AddUser(user2);
 
+	db->print();
 
-            switch (i)
-            {
-            case static_cast<int>(dayWeek::Mon):
-                std::cout << "Monday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Tue):
-                std::cout << "Tuesday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Wen):
-                std::cout << "Wendesday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Thu):
-                std::cout << "Thusday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Fri):
-                std::cout << "Friday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Sat):
-                std::cout << "Saturday" << std::endl;
-                break;
-            case static_cast<int>(dayWeek::Sun):
-                std::cout << "Sunday" << std::endl;
-                break;
-            }
-
-        //}
-       // else {
-        //    std::cout << "Unknow" << std::endl;
-       //     continue;
-       // }
-    } 
-    
-    //int *array{ new int[4] };
-
+	delete db;
+ 
 }
