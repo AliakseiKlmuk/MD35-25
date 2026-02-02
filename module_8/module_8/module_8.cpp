@@ -1,6 +1,8 @@
 ﻿
 #include <iostream>
 #include "ImageConverter.h"
+#include "Image.h"
+#include <vector>
 
 int main()
 {
@@ -8,16 +10,26 @@ int main()
 
     ImageConverter converter1;  
     std::cout << sizeof(converter1) << std::endl;
-    std::vector<char> image1;
-    image1.resize(100);
-    converter1.Converter(image1);
-    //converter1.m_currentImage = {};
+    std::vector<char> data;
+    data.resize(100);
+    Image image1(data, 10,10);
 
-    auto currImage = converter1.getCurrentImage();
+    Image image_copy{ image1 };
 
-    ImageConverter* converter2 = new ImageConverter;
-    std::cout << sizeof(*converter2) << std::endl;
-    std::vector<char> image2;
-    image1.resize(200);
-    converter2->Converter(image2);
+    Image* imagePtr = new Image;
+    delete imagePtr;
+   
+
+   // return 0;
+
+
+    //auto currImage = converter1.getCurrentImage();
+
+    //ImageConverter* converter2 = new ImageConverter;
+    //std::cout << sizeof(*converter2) << std::endl;
+    //Image image2;
+    //std::vector<char> data2;
+    //data2.resize(200);
+    //image2.setData(data2);
+    //converter2->Converter(image2);
 }
