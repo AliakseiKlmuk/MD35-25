@@ -1,18 +1,18 @@
 #pragma once
-#include <string>
 #include <iostream>
 
-class publication
+class sales
 {
 public:
-	publication(const std::string& name): _name(name) {}
+	sales(float coast) : _coast(coast) {}
 
 public:
 	virtual void getData();
 	virtual void putData() const;
 
 private:
-	std::string  _name;
-	
+	float _size[3];
+	float _coast;
+
 };
 

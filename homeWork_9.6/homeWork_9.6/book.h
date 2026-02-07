@@ -1,11 +1,14 @@
 #pragma once
 #include "publication.h"
+#include "sales.h"
 
-class book : private publication
+class book : private publication, private sales
 {
 public:
-	book():publication("", 0.0), _page(0){}
-	book(const std::string& name, float coast, int page) : publication(name, coast), _page(page) {}
+	book():publication(""), _page(0), sales(0.0)  {}
+
+	book(const std::string& name, int page, float coast)
+		: publication(name), _page(page), sales(coast) {}
 
 public:
 	void getData() override;
