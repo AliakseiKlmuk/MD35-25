@@ -3,14 +3,14 @@
 
 void scientist::getData()
 {
-	employee::getData();
+	_emp.getData();
 	std::cout << "Enter publication: "; std::cin >> _pubs;
-	student::getedu();
+	_stu.getedu();
 }
 
 void scientist::putData() const
 {
-	employee::putData();
+	_emp.putData();
 	std::cout << "\n Publication: " << _pubs;
-	student::putedu();
+	_stu.putedu();
 }

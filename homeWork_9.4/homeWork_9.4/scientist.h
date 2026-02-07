@@ -1,8 +1,9 @@
 #pragma once
 #include "employee.h"
 #include "student.h"
+#include <string>
 
-class scientist : private employee, private student
+class scientist
 {
 public:
 	void getData();
@@ -10,6 +11,8 @@ public:
 
 private:
 	int _pubs;
+	employee _emp;
+	student _stu;
 
 };
 

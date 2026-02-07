@@ -1,5 +1,7 @@
 #pragma once
 #include "laborer.h"
+#include <string>
+
 class foremen : public laborer
 {
 public:

@@ -10,5 +10,5 @@ void student::getedu()
 void student::putedu() const
 {
 	std::cout << "\nSchool: " << _school;
-	std::cout << "\nDegree education: " << _degree;
+	std::cout << "\nDegree degree education: " << _degree;
 }

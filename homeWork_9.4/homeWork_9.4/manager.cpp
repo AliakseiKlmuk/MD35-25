@@ -3,16 +3,16 @@
 
 void manager::getData()
 {
-	employee::getData();
+	_emp.getData();
 	std::cout << "Enter ocupation: "; std::cin >> _title;
 	std::cout << "Enter deposit: "; std::cin >> _dues;
-	student::getedu();
+	_stu.getedu();
 }
 
 void manager::putData() const
 {
-	employee::putData();
+	_emp.putData();
 	std::cout << "\n Ocupation: " << _title;
 	std::cout << "\n Deposit: " << _dues;
-	student::putedu();
+	_stu.putedu();
 }

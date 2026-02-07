@@ -4,7 +4,7 @@
 void employee::getData()
 {
 	std::cout << "\n Enter Second name: "; std::cin >> _name;
-	std::cout << "Enter number: "; std::cin >> _number;
+	std::cout << " Enter number: "; std::cin >> _number;
 }
 
 void employee::putData() const

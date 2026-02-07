@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 class student
 {
@@ -7,8 +8,8 @@ public:
 	void putedu() const;
 
 private:
-	char _school[80];
-	char _degree[80];
+	char _school;
+	char _degree;
 
 };
 

@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 const int LEN = 80;
 
@@ -9,7 +10,7 @@ public:
 	void putData() const;
 
 private:
-	char _name[LEN];
+	char _name;
 	unsigned long _number;
 
 };
