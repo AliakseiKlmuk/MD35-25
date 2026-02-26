@@ -27,7 +27,7 @@ public:
 		_title = new std::string(title);
 	}
 
-	void print() const; 
+	void print() const override;
 
 public:
 	~Book()
