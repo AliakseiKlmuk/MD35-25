@@ -1,0 +1,12 @@
+release/component.o
+release/createelementdialog.o
+release/createwindow.o
+release/databasemanager.o
+release/main.o
+release/mainwindow.o
+release/paintscene.o
+release/qrc_Icon.o
+release/moc_createelementdialog.o
+release/moc_createwindow.o
+release/moc_mainwindow.o
+release/moc_paintscene.o
