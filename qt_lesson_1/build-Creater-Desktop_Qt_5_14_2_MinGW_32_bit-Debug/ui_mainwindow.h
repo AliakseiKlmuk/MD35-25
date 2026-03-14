@@ -26,7 +26,7 @@ class Ui_MainWindow
 {
 public:
     QAction *actionNew;
-    QAction *actionAdd_element;
+    QAction *showElement;
     QAction *actionSave;
     QAction *actionDownload;
     QAction *actionQuit;
@@ -50,8 +50,8 @@ public:
         MainWindow->resize(800, 600);
         actionNew = new QAction(MainWindow);
         actionNew->setObjectName(QString::fromUtf8("actionNew"));
-        actionAdd_element = new QAction(MainWindow);
-        actionAdd_element->setObjectName(QString::fromUtf8("actionAdd_element"));
+        showElement = new QAction(MainWindow);
+        showElement->setObjectName(QString::fromUtf8("showElement"));
         actionSave = new QAction(MainWindow);
         actionSave->setObjectName(QString::fromUtf8("actionSave"));
         actionDownload = new QAction(MainWindow);
@@ -102,7 +102,7 @@ public:
         menubar->addAction(menuGraphics->menuAction());
         menubar->addAction(menuRun->menuAction());
         menuFile->addAction(actionNew);
-        menuFile->addAction(actionAdd_element);
+        menuFile->addAction(showElement);
         menuFile->addAction(actionSave);
         menuFile->addAction(actionDownload);
         menuFile->addSeparator();
@@ -125,7 +125,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
-        actionAdd_element->setText(QCoreApplication::translate("MainWindow", "Add element", nullptr));
+        showElement->setText(QCoreApplication::translate("MainWindow", "showElement", nullptr));
         actionSave->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         actionDownload->setText(QCoreApplication::translate("MainWindow", "Download", nullptr));
         actionQuit->setText(QCoreApplication::translate("MainWindow", "Quit", nullptr));

@@ -39,7 +39,7 @@
      <string>File</string>
     </property>
     <addaction name="actionNew"/>
-    <addaction name="actionAdd_element"/>
+    <addaction name="showElement"/>
     <addaction name="actionSave"/>
     <addaction name="actionDownload"/>
     <addaction name="separator"/>
@@ -84,9 +84,9 @@
     <string>New</string>
    </property>
   </action>
-  <action name="actionAdd_element">
+  <action name="showElement">
    <property name="text">
-    <string>Add element</string>
+    <string>showElement</string>
    </property>
   </action>
   <action name="actionSave">

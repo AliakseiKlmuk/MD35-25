@@ -24,45 +24,29 @@ double CreateElementDialog::getPower() const{
 double CreateElementDialog::getNominal() const{
     return ui->nominalLineEdit->text().toDouble();}
 
-void CreateElementDialog::on_buttonBox_accepted(){
+void CreateElementDialog::on_buttonAccept_clicked()
+{
+     QString type = ui->typeLineEdit->text();
+     QString subtype = ui->subtypeLineEdit->text();
+     QString name = ui->nameLineEdit->text();
 
-    QString type = ui->typeLineEdit->text();
-    QString subtype = ui->subtypeLineEdit->text();
-    QString name = ui->nameLineEdit->text();
+     bool ok;
+     double power = ui->powerLineEdit->text().toDouble(&ok);
+     if(!ok){
+         QMessageBox::warning(this, "Error", "Enter correct data power");
+         return;
+     }
 
-    bool ok;
-    double power = ui->powerLineEdit->text().toDouble(&ok);
-    if(!ok){
-        QMessageBox::warning(this, "mistake", "Enter correct data power");
-        return;
-    }
-
-    double nominal = ui->nominalLineEdit->text().toDouble(&ok);
-    if(!ok){
-        QMessageBox::warning(this, "mistake", "Enter correct data nominal");
-        return;
-    }
+     double nominal = ui->nominalLineEdit->text().toDouble(&ok);
+     if(!ok){
+         QMessageBox::warning(this, "Error", "Enter correct data nominal");
+         return;
+     }
 
         Component newComponent(type, subtype, name, power, nominal);
         emit componentCreated(newComponent);
 
-            accept();
+        //ui->statusLabel->setText("Component added sucesfuly");
 
-        //ui->statusbar->showMassage("Component added successfully!");
-
-
-
-    //QSqlQuery query;
-    //query.prepare();
-
-//    QString message = QString("Тип: %1\nПодтип: %2\nИмя: %3\nМощность: %4\nНоминал: %5")
-//                         .arg(type)
-//                         .arg(subtype)
-//                         .arg(name)
-//                         .arg(power)
-//                         .arg(nominal);
-//       QMessageBox::information(this, "Информация", message);
-
-
-
+       accept();
 }

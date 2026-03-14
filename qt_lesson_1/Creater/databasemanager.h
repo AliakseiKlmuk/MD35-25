@@ -4,6 +4,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QList>
+#include <QDebug>
+
 #include "component.h"
 
 class databaseManager
@@ -17,6 +19,7 @@ public:
     void addComponent(const Component &component);
     void createTable();
     QList<Component> fetchComponents();
+    QList<Component> getAllComponents();
 
 private:
     QSqlDatabase db;

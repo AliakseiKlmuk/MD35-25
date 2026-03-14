@@ -7,7 +7,7 @@ class createWindow  : public QDialog
 {
     Q_OBJECT
 public:
-    explicit createWindow(QWidget *parent = 0);
+    explicit createWindow(QWidget *parent = nullptr);
 
 };
 

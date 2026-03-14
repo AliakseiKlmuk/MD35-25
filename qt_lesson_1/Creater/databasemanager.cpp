@@ -28,31 +28,21 @@ void databaseManager::createTable(){
                "subtype TEXT, "
                "name TEXT, "
                "power REAL, "
-               "nominal REAL, "
-               "packege TEXT, "
-               "schematic TEXT, "
-               "footprint TEXT, "
-               "elementSize TEXT, "
-               "pinout TEXT)");
+               "nominal REAL)");
 }
 
 void databaseManager::addComponent(const Component &component){
     QSqlQuery query;
-    query.prepare("INSERT INTO components (type, subtype, name, power, nominal, packege, "
-                  "schematic, footprint, slsmentSize, pinout) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+
+    query.prepare("INSERT INTO components (type, subtype, name, power, nominal) VALUES (?, ?, ?, ?, ?)");
     query.addBindValue(component.getType());
     query.addBindValue(component.getSubtype());
     query.addBindValue(component.getName());
     query.addBindValue(component.getPower());
     query.addBindValue(component.getNominal());
-    query.addBindValue(component.getPackege());
-    query.addBindValue(component.getSchematic());
-    query.addBindValue(component.getFootprint());
-    query.addBindValue(component.getElementSize());
-    query.addBindValue(component.getPinout());
 
     if(!query.exec()){
-        qWarning() << "Failed to insert component:" << query.lastError().text();
+        qDebug() << "Failed to insert component:" << query.lastError();
     }
 }
 
@@ -60,17 +50,16 @@ QList<Component> databaseManager::fetchComponents(){
     QList<Component> components;
     QSqlQuery query("SELECT * FROM components");
         while(query.next()){
-            components.append(Component(
+        components.append(Component(
             query.value(1).toString(),
             query.value(2).toString(),
             query.value(3).toString(),
             query.value(4).toDouble(),
-            query.value(5).toDouble(),
-            query.value(6).toString(),
-            query.value(7).toString(),
-            query.value(8).toString(),
-            query.value(9).toString(),
-            query.value(10).toString() ));
+            query.value(5).toDouble()));
         }
         return components;
+}
+
+QList<Component> databaseManager::getAllComponents(){
+    return fetchComponents();
 }

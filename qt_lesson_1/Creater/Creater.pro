@@ -19,6 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     component.cpp \
+    componentstablewindow.cpp \
     createelementdialog.cpp \
     createwindow.cpp \
     databasemanager.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     component.h \
+    componentstablewindow.h \
     createelementdialog.h \
     createwindow.h \
     databasemanager.h \
@@ -35,6 +37,7 @@ HEADERS += \
     paintscene.h
 
 FORMS += \
+    componentstablewindow.ui \
     createelementdialog.ui \
     mainwindow.ui
 

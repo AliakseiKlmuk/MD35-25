@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QLine>
 #include <QMessageBox>
+#include <QLabel>
 
 #include "component.h"
 
@@ -27,7 +28,7 @@ public:
     double getNominal() const;
 
 private slots:
-    void on_buttonBox_accepted();
+    void on_buttonAccept_clicked();
 
 private:
     Ui::CreateElementDialog *ui;

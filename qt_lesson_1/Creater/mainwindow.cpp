@@ -1,12 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 #include "createwindow.h"
 #include "createelementdialog.h"
 #include "component.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
+      dbManager(new databaseManager()),
       ui(new Ui::MainWindow),
+      tableWindow(nullptr),
       drawing(false)
 {
     ui->setupUi(this);
@@ -19,7 +22,11 @@ MainWindow::MainWindow(QWidget *parent)
         timer->start(100);          // Запускаем таймер
 }
 
-MainWindow::~MainWindow(){ delete ui;}
+MainWindow::~MainWindow()
+{
+    delete ui;
+    delete dbManager;
+}
 
 void MainWindow::slotTimer() {
     timer->stop();
@@ -33,10 +40,6 @@ void MainWindow::resizeEvent(QResizeEvent *event) {
 
 void MainWindow::on_actionNew_triggered() {
    ui->statusbar->showMessage("Create new project");
-}
-
-void MainWindow::on_actionAdd_element_triggered() {
-    ui->statusbar->showMessage("Add element");
 }
 
 void MainWindow::on_actionSave_triggered() {
@@ -78,12 +81,29 @@ void MainWindow::on_actionrun_creater_triggered() {
 }
 
 void MainWindow::on_actioncreate_component_triggered() {
-    CreateElementDialog  dialog(this);
+    CreateElementDialog *dialog = new CreateElementDialog(this);
 
-    connect(&dialog, &CreateElementDialog::componentCreated, this, [this](const Component &component){
-        dbManager.addComponent(component);
-        ui->statusbar->showMessage("Component added succesfully!");
+    connect(dialog, &CreateElementDialog::componentCreated, this, [this](const Component &component) {
+    dbManager->addComponent(component);
+        //ui->statusbar->showMessage("Component added succesfully!");
     });
 
-    dialog.exec();
+    if (componentsTableWindow *tableWindow = findChild<componentsTableWindow *>()) {
+                tableWindow->loadComponents(); // Убедитесь, что метод loadComponents существует
+            }
+
+    dialog->exec();
+    delete dialog;
 }
+
+void MainWindow::on_showElement_triggered()
+{
+    if(!tableWindow){
+        tableWindow = new componentsTableWindow(dbManager, this);
+        tableWindow->setWindowTitle("Components");
+        tableWindow->resize(800, 600);
+    }
+        tableWindow->show();
+        ui->statusbar->showMessage("choise element");
+}
+
