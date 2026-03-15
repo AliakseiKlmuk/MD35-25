@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>1</y>
+      <width>791</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="showElement"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionDownload"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+    <addaction name="separator"/>
+    <addaction name="actioncreate_component"/>
+   </widget>
+   <widget class="QMenu" name="menuGraphics">
+    <property name="title">
+     <string>Graphics</string>
+    </property>
+    <addaction name="actionconnector"/>
+    <addaction name="actioneraiser"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionrun_creater"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuGraphics"/>
+   <addaction name="menuRun"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionconnector"/>
+   <addaction name="actioneraiser"/>
+   <addaction name="actionrun_creater"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="showElement">
+   <property name="text">
+    <string>showElement</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionDownload">
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionconnector">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/icon/Icon/pencil_5481.png</normaloff>:/icon/Icon/pencil_5481.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connector</string>
+   </property>
+  </action>
+  <action name="actioneraiser">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/icon/Icon/eraser_4884.png</normaloff>:/icon/Icon/eraser_4884.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eraser</string>
+   </property>
+  </action>
+  <action name="actionrun_creater">
+   <property name="icon">
+    <iconset resource="Icon.qrc">
+     <normaloff>:/Icon/launch_1324.png</normaloff>:/Icon/launch_1324.png</iconset>
+   </property>
+   <property name="text">
+    <string>run creater</string>
+   </property>
+  </action>
+  <action name="actioncreate_component">
+   <property name="text">
+    <string>create component</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

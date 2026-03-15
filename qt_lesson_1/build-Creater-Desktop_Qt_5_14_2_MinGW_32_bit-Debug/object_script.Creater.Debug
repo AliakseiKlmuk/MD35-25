@@ -1,0 +1,14 @@
+debug/component.o
+debug/componentstablewindow.o
+debug/createelementdialog.o
+debug/createwindow.o
+debug/databasemanager.o
+debug/main.o
+debug/mainwindow.o
+debug/paintscene.o
+debug/qrc_Icon.o
+debug/moc_componentstablewindow.o
+debug/moc_createelementdialog.o
+debug/moc_createwindow.o
+debug/moc_mainwindow.o
+debug/moc_paintscene.o
