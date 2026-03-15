@@ -25,7 +25,7 @@ void databaseManager::createTable(){
     query.exec("CREATE TABLE IF NOT EXISTS components ("
                "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                "type TEXT, "
-               "subtype TEXT, "
+               "soccet TEXT, "
                "name TEXT, "
                "power REAL, "
                "nominal REAL)");
@@ -34,7 +34,7 @@ void databaseManager::createTable(){
 void databaseManager::addComponent(const Component &component){
     QSqlQuery query;
 
-    query.prepare("INSERT INTO components (type, subtype, name, power, nominal) VALUES (?, ?, ?, ?, ?)");
+    query.prepare("INSERT INTO components (type, soccet, name, power, nominal) VALUES (?, ?, ?, ?, ?)");
     query.addBindValue(component.getType());
     query.addBindValue(component.getSubtype());
     query.addBindValue(component.getName());
@@ -44,6 +44,8 @@ void databaseManager::addComponent(const Component &component){
     if(!query.exec()){
         qDebug() << "Failed to insert component:" << query.lastError();
     }
+    //int id = query.lastInsertId().toInt();
+    //component.setId(id);
 }
 
 QList<Component> databaseManager::fetchComponents(){
@@ -62,4 +64,15 @@ QList<Component> databaseManager::fetchComponents(){
 
 QList<Component> databaseManager::getAllComponents(){
     return fetchComponents();
+}
+
+void databaseManager::deleteComponent(int id){
+    QSqlQuery query;
+
+    query.prepare("Delete FROM components where id = ?");
+    query.addBindValue(id);
+
+    if (!query.exec()){
+         qDebug() << "Failed to delete component:" << query.lastError();
+    }
 }

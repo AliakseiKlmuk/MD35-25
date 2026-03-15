@@ -40,7 +40,7 @@
      <widget class="QLineEdit" name="typeLineEdit"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="subtypeLineEdit"/>
+     <widget class="QLineEdit" name="soccetLineEdit"/>
     </item>
     <item>
      <widget class="QLineEdit" name="nameLineEdit"/>
@@ -53,20 +53,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="statusLabel">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>180</y>
-     <width>221</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>1</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -86,7 +73,7 @@
     <item>
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Sub Type</string>
+       <string>Soccet</string>
       </property>
      </widget>
     </item>

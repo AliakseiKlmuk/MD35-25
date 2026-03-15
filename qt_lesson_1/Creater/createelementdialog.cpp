@@ -16,7 +16,7 @@ CreateElementDialog::~CreateElementDialog()
 QString CreateElementDialog::getType() const{
     return ui->typeLineEdit->text();}
 QString CreateElementDialog::getSubtype() const{
-    return ui->subtypeLineEdit->text();}
+    return ui->soccetLineEdit->text();}
 QString CreateElementDialog::getName() const {
     return ui->nameLineEdit->text(); }
 double CreateElementDialog::getPower() const{
@@ -27,7 +27,7 @@ double CreateElementDialog::getNominal() const{
 void CreateElementDialog::on_buttonAccept_clicked()
 {
      QString type = ui->typeLineEdit->text();
-     QString subtype = ui->subtypeLineEdit->text();
+     QString subtype = ui->soccetLineEdit->text();
      QString name = ui->nameLineEdit->text();
 
      bool ok;
@@ -45,8 +45,6 @@ void CreateElementDialog::on_buttonAccept_clicked()
 
         Component newComponent(type, subtype, name, power, nominal);
         emit componentCreated(newComponent);
-
-        //ui->statusLabel->setText("Component added sucesfuly");
 
        accept();
 }

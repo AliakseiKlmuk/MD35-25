@@ -18,6 +18,8 @@ public:
     bool openDatabase();
     void addComponent(const Component &component);
     void createTable();
+    void deleteComponent(int id);
+
     QList<Component> fetchComponents();
     QList<Component> getAllComponents();
 

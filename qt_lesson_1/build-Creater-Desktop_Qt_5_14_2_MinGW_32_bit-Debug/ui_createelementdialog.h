@@ -27,12 +27,11 @@ public:
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLineEdit *typeLineEdit;
-    QLineEdit *subtypeLineEdit;
+    QLineEdit *soccetLineEdit;
     QLineEdit *nameLineEdit;
     QLineEdit *powerLineEdit;
     QLineEdit *nominalLineEdit;
-    QLabel *statusLabel;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
     QLabel *label;
     QLabel *label_2;
@@ -59,10 +58,10 @@ public:
 
         verticalLayout->addWidget(typeLineEdit);
 
-        subtypeLineEdit = new QLineEdit(layoutWidget);
-        subtypeLineEdit->setObjectName(QString::fromUtf8("subtypeLineEdit"));
+        soccetLineEdit = new QLineEdit(layoutWidget);
+        soccetLineEdit->setObjectName(QString::fromUtf8("soccetLineEdit"));
 
-        verticalLayout->addWidget(subtypeLineEdit);
+        verticalLayout->addWidget(soccetLineEdit);
 
         nameLineEdit = new QLineEdit(layoutWidget);
         nameLineEdit->setObjectName(QString::fromUtf8("nameLineEdit"));
@@ -79,36 +78,33 @@ public:
 
         verticalLayout->addWidget(nominalLineEdit);
 
-        statusLabel = new QLabel(CreateElementDialog);
-        statusLabel->setObjectName(QString::fromUtf8("statusLabel"));
-        statusLabel->setGeometry(QRect(140, 180, 221, 21));
-        widget = new QWidget(CreateElementDialog);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(120, 20, 111, 131));
-        verticalLayout_2 = new QVBoxLayout(widget);
+        layoutWidget1 = new QWidget(CreateElementDialog);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(120, 20, 111, 131));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget1);
         label->setObjectName(QString::fromUtf8("label"));
 
         verticalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         verticalLayout_2->addWidget(label_2);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget1);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         verticalLayout_2->addWidget(label_3);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget1);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         verticalLayout_2->addWidget(label_4);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget1);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
         verticalLayout_2->addWidget(label_5);
@@ -123,9 +119,8 @@ public:
     {
         CreateElementDialog->setWindowTitle(QCoreApplication::translate("CreateElementDialog", "Dialog", nullptr));
         buttonAccept->setText(QCoreApplication::translate("CreateElementDialog", "Enter", nullptr));
-        statusLabel->setText(QCoreApplication::translate("CreateElementDialog", "1", nullptr));
         label->setText(QCoreApplication::translate("CreateElementDialog", "Type", nullptr));
-        label_2->setText(QCoreApplication::translate("CreateElementDialog", "Sub Type", nullptr));
+        label_2->setText(QCoreApplication::translate("CreateElementDialog", "Soccet", nullptr));
         label_3->setText(QCoreApplication::translate("CreateElementDialog", "Name", nullptr));
         label_4->setText(QCoreApplication::translate("CreateElementDialog", "Power", nullptr));
         label_5->setText(QCoreApplication::translate("CreateElementDialog", "Nominal", nullptr));

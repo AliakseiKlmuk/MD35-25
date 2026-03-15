@@ -7,7 +7,7 @@ class Component
 {
 public:
     Component( const QString &type, const QString &subtype, const QString &name,
-               double power, double nominal);
+               double power, double nominal, int id = -1);
 
 public:
     QString getType() const {return _type;};
@@ -15,6 +15,7 @@ public:
     QString getName() const {return _name;};
     double getPower() const {return _power;};
     double getNominal() const {return _nominal;};
+    int getId() const;
 
 private:
     QString _type;           // тип
@@ -22,6 +23,7 @@ private:
     QString _name;           // название
     double _power;           // мощность
     double _nominal;         // номинал
+    int _id;
 
 };
 

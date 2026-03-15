@@ -21,6 +21,10 @@ componentsTableWindow::componentsTableWindow(databaseManager *dbManagerInstance,
     connect(closeButton, &QPushButton::clicked, this, &QWidget::close);
     layout->addWidget(closeButton);
 
+    QPushButton *deleteButton = new QPushButton("Delete selected", this);
+    connect(deleteButton, &QPushButton::clicked, this, &componentsTableWindow::deleteSelectComponent);
+    layout->addWidget(deleteButton);
+
     setLayout(layout);
     resize(800, 600);
 
@@ -42,6 +46,18 @@ void componentsTableWindow::loadComponents()
         tableWidget->setItem(row, 2, new QTableWidgetItem(component.getName()));
         tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(component.getPower())));
         tableWidget->setItem(row, 4, new QTableWidgetItem(QString::number(component.getNominal())));
+    }
+}
+
+void componentsTableWindow::deleteSelectComponent(){
+    int currentRow = tableWidget->currentRow();
+
+    if (currentRow >= 0){
+        int componentId = tableWidget->item(currentRow, 0)->data(Qt::UserRole).toInt();
+        dbManager->deleteComponent(componentId);
+        loadComponents();
+    } else {
+        QMessageBox::warning(this, "Warning", "No component selected");
     }
 }
 

@@ -7,6 +7,7 @@
 #include <QBoxLayout>
 #include <QHeaderView>
 #include <QPushButton>
+#include <QMessageBox>
 
 #include "databasemanager.h"
 
@@ -21,6 +22,7 @@ class componentsTableWindow : public QWidget
 public:
     explicit componentsTableWindow(databaseManager *dbManager, QWidget *parent = nullptr);
     void loadComponents();
+    void deleteSelectComponent();
 
 private:
     QTableWidget *tableWidget;

@@ -85,7 +85,7 @@ void MainWindow::on_actioncreate_component_triggered() {
 
     connect(dialog, &CreateElementDialog::componentCreated, this, [this](const Component &component) {
     dbManager->addComponent(component);
-        //ui->statusbar->showMessage("Component added succesfully!");
+    ui->statusbar->showMessage("Component added succesfully!");
     });
 
     if (componentsTableWindow *tableWindow = findChild<componentsTableWindow *>()) {
@@ -104,6 +104,6 @@ void MainWindow::on_showElement_triggered()
         tableWindow->resize(800, 600);
     }
         tableWindow->show();
-        ui->statusbar->showMessage("choise element");
+        ui->statusbar->showMessage("Choose element");
 }
 
